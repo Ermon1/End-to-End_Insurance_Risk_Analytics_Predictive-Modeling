@@ -1,0 +1,23 @@
+# Ignore data directory
+data/
+!data/.gitkeep
+
+# Ignore virtual environments
+venv/
+.venv/
+env/
+
+# Ignore Python egg and build artifacts
+*.egg
+*.egg-info/
+dist/
+build/
+
+
+# Ignore Python egg and build artifacts
+
+
+/src.egg-info/
+
+src.egg-info/
+.eggs/ 
