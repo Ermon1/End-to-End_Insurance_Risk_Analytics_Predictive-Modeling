@@ -15,7 +15,7 @@ def get_logger(name: Optional[str] = None, log_name: Optional[str] = None) -> lo
     if logger.handlers:
         return logger
 
-    project_root = Path(__file__).resolve().parent.parent
+    project_root = Path(__file__).resolve().parent.parent.parent
     log_dir = project_root / "logs" / log_name
     log_dir.mkdir(parents=True, exist_ok=True)
     log_file = log_dir / "execution.log"

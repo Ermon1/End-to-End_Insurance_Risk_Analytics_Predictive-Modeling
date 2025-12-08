@@ -1,5 +1,5 @@
 data:
-  raw_data_path: "data/raw/insurance.csv"
+  raw_data_path: "raw/MachineLearningRating_v3.txt"
   processed_data_path: "data/processed/insurance_processed.csv"
   test_size: 0.2
   random_state: 42
