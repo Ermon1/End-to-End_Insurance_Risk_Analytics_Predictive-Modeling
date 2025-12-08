@@ -1,6 +1,4 @@
 # Ignore data directory
-data/
-!data/.gitkeep
 
 # Ignore virtual environments
 venv/
