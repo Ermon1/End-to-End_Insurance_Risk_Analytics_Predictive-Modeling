@@ -13,7 +13,9 @@ env/
 dist/
 build/
 
+logs
 
+logs/
 # Ignore Python egg and build artifacts
 
 
