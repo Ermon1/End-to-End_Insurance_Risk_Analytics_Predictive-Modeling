@@ -1,6 +1,4 @@
 # Ignore data directory
-data/
-!data/.gitkeep
 
 # Ignore virtual environments
 venv/
@@ -13,7 +11,9 @@ env/
 dist/
 build/
 
+logs
 
+logs/
 # Ignore Python egg and build artifacts
 
 
