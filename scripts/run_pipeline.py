@@ -5,26 +5,26 @@ from src.modeling.model_evalution import ModelEvaluator
 from src.modeling.interpritibility import ModelInterpreter
 
 def main():
-    # print("=== Task 4: End-to-End Insurance Risk Modeling ===\n")
+    print("=== Task 4: End-to-End Insurance Risk Modeling ===\n")
 
-    # # # Step 1: Load Data
-    # print("Step 1: Loading raw data...")
-    # df = load_task4_data()
-    # print("Data loaded:", df.shape)
+    # # Step 1: Load Data
+    print("Step 1: Loading raw data...")
+    df = load_task4_data()
+    print("Data loaded:", df.shape)
 
-    # # Step 2: Data Preparation
-    # print("\nStep 2: Preparing data (dropping, imputing, splitting)...")
-    # preparer = DataPreparer(df, target="TotalClaims")
-    # preparer.process_all()  # drops extreme missing, imputes, saves train/test splits
-    # print("Data preparation complete.")
+    # Step 2: Data Preparation
+    print("\nStep 2: Preparing data (dropping, imputing, splitting)...")
+    preparer = DataPreparer(df, target="TotalClaims")
+    preparer.process_all()  # drops extreme missing, imputes, saves train/test splits
+    print("Data preparation complete.")
 
-    # # # Step 3: Model Training
-    # print("\nStep 3: Training models...")
-    # trainer = ModelTrainer()
-    # trainer.train_all()
-    # print("Model training complete. Models saved in artifacts/")
+    # # Step 3: Model Training
+    print("\nStep 3: Training models...")
+    trainer = ModelTrainer()
+    trainer.train_all()
+    print("Model training complete. Models saved in artifacts/")
 
-    # Step 4: Model Evaluation
+    Step 4: Model Evaluation
     print("\nStep 4: Evaluating models...")
     evaluator = ModelEvaluator()
     evaluator.run_all_evaluations()
